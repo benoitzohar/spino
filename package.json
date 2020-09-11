@@ -1,0 +1,14 @@
+{
+  "name": "spino",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/benoitzohar/spino.git",
+  "author": "Benoit Zohar <benoit.zohar@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-serve": "^1.0.1"
+  },
+  "scripts": {
+    "start": "http-serve"
+  }
+}
