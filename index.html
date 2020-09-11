@@ -32,21 +32,40 @@
             height: 100vh;
         }
 
-        .logo {
+        .wrapper {
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
 
-        .logo img {
+        .logo {
             max-width: 80%;
+        }
+
+        .store-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .store-buttons a img {
+            max-width: 200px;
         }
     </style>
 </head>
 
 <body>
-    <div class="logo">
-        <img src="/assets/logo.png" />
+    <div class="wrapper">
+        <img class="logo" src="/assets/logo.png" />
+
+        <div class="store-buttons">
+            <a
+                href="https://play.google.com/store/apps/details?id=com.spino&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img
+                    alt="Get it on Google Play"
+                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" /></a>
+        </div>
     </div>
 </body>
 
