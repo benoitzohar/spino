@@ -10,5 +10,8 @@
   },
   "scripts": {
     "start": "http-serve"
+  },
+  "dependencies": {
+    "smart-app-banner": "^2.0.0"
   }
 }

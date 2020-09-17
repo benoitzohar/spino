@@ -23,6 +23,9 @@
     <meta name="twitter:title" content="Spino">
     <meta name="twitter:description" content="A fun drinking game for your phone!">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/smart-app-banner/dist/smart-app-banner.css" type="text/css"
+        media="screen">
+    <meta name="google-play-app" content="app-id=com.spino">
     <style>
         body {
             background-color: #381460;
@@ -84,6 +87,26 @@
         </div>
 
     </div>
+    <script src="node_modules/smart-app-banner/dist/smart-app-banner.js"></script>
+    <script type="text/javascript">
+        new SmartBanner({
+            daysHidden: 15,   // days to hide banner after close button is clicked (defaults to 15)
+            daysReminder: 90, // days to hide banner after "VIEW" button is clicked (defaults to 90)
+            appStoreLanguage: 'us', // language code for the App Store (defaults to user's browser language)
+            title: 'Spino',
+            author: 'BZApps',
+            button: 'VIEW',
+            store: {
+                android: 'In Google Play',
+            },
+            price: {
+                android: 'FREE',
+            }
+            // , theme: '' // put platform type ('ios', 'android', etc.) here to force single theme on all device
+            , icon: 'https://lh3.googleusercontent.com/aTJjqUWxMpU3wvffS_ZwU4mQX4rn6DtD9h2mXpYf31fnSjbz9ey289cXlb-q6_jMJ0g=s360-rw' // full path to icon image if not using website icon image
+            , force: 'android' // Uncomment for platform emulation
+        });
+    </script>
 </body>
 
 </html>
