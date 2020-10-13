@@ -49,6 +49,12 @@
             flex-direction: column;
         }
 
+        @media only screen and (max-width: 600px) {
+            .wrapper {
+                zoom: 0.55
+            }
+        }
+
         .logo {
             max-width: 80%;
         }
@@ -99,16 +105,18 @@
             appStoreLanguage: 'us', // language code for the App Store (defaults to user's browser language)
             title: 'Spino',
             author: 'BZApps',
-            button: 'VIEW',
+            button: 'Open',
             store: {
                 android: 'In Google Play',
+                ios: 'In the App Store',
             },
             price: {
-                android: 'FREE',
+                android: 'Free',
+                ios: 'Free'
             }
             // , theme: '' // put platform type ('ios', 'android', etc.) here to force single theme on all device
             , icon: 'https://lh3.googleusercontent.com/aTJjqUWxMpU3wvffS_ZwU4mQX4rn6DtD9h2mXpYf31fnSjbz9ey289cXlb-q6_jMJ0g=s360-rw' // full path to icon image if not using website icon image
-            , force: 'android' // Uncomment for platform emulation
+            //, force: 'android' // Uncomment for platform emulation
         });
     </script>
 </body>
